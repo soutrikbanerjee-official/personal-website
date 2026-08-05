@@ -14,46 +14,44 @@
 <body>
     <header>
         <nav id="navbar">
-            <a class='navlink' href="index.html">Home</a>
-            <a class='navlink' href="about.html">About Me</a>
-            <a class='navlink' href="blog.html">Blog</a>
-            <a class='navlink' href="contact.html">Connect with Me</a>
+            <a class="navlink" href="index.html">Home</a>
+            <a class="navlink" href="about.html">About Me</a>
+            <a class="navlink" href="blog.html">Blog</a>
+            <a class="navlink" href="contact.html">Connect with Me</a>
         </nav>
-        <section>
-            <img src="Images/cover.jpg" alt="Cover Picture" width="100%">
-            <a class='link' href="index.html"><img src="SVGs/logo-soutrikbanerjee.svg" alt="Home Page Logo"></a>
-        </section>
+        <div class="canvascontainer">
+            <canvas id="networkcanvas"></canvas>
+        </div>
     </header>
 
     <main>
-        <h1>Soutrik Banerjee</h1>
         <section>
-            <img src="Images/soutrikbanerjee.jpg" alt="Soutrik Banerjee">
-        </section>
-        <section>
-        <p>Welcome to my personal website! I am Soutrik Banerjee, a passionate web developer and technology enthusiast. Here, you can learn more about me, read my blog posts, and connect with me on social media. Feel free to explore the different sections of my website to get to know me better.</p>
-        <button>Learn More</button>
+            <h1 id="heading1">Welcome to my portfolio website!</h1>
+            <p id="para1">Here, you can learn more about me, read my blog posts, and connect with me on social media. Feel free to explore the different sections of my website to get to know me better.</p>
+            <button class="btn1">Know More About Me</button>
         </section>
 
         <section>
             <h2>Connect on Social Media</h2>
             <ul>
-                <li><a class='link' href=""><img src="SVGs/logo-linkedin.svg" alt="LinkedIn" width="25"></a></li>
-                <li><a class='link' href=""><img src="SVGs/logo-github.svg" alt="GitHub" width="25"></a></li>
-                <li><a class='link' href=""><img src="SVGs/logo-youtube.svg" alt="YouTube" width="25"></a></li>
+                <li><a class="link" href=""><img src="SVGs/logo-linkedin.svg" alt="LinkedIn" width="25"></a></li>
+                <li><a class="link" href=""><img src="SVGs/logo-github.svg" alt="GitHub" width="25"></a></li>
+                <li><a class="link" href=""><img src="SVGs/logo-youtube.svg" alt="YouTube" width="25"></a></li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <ol>
-            <li><a class='link' href="index.html">Home</a></li>
-            <li><a class='link' href="about.html">About Me</a></li>
-            <li><a class='link' href="blog.html">Blog</a></li>
-            <li><a class='link' href="contact.html">Connect with Me</a></li>
-        </ol>
+        <ul>
+            <li><a class="link" href="index.html">Home</a></li>
+            <li><a class="link" href="about.html">About Me</a></li>
+            <li><a class="link" href="blog.html">Blog</a></li>
+            <li><a class="link" href="contact.html">Connect with Me</a></li>
+        </ul>
     </footer>
-     
+
+    <script src="index.js"></script>
+
 </body>
 
 </html>
