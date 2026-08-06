@@ -214,3 +214,29 @@
 a, button, input[type="submit"] {
     /* cursor: url("Cursor/pointer.cur"), auto; */
 }
+
+/* Social Media Icons Style */
+
+#sociallinks {
+    padding: 25px;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sociallinks a {
+    background-color: transparent;
+}
+
+.socialicons {
+    width: 30px;
+    height: 30px;
+
+    transition: transform 0.3s ease;
+}
+
+.socialicons:hover {
+    transform: scale(1.5);
+}
