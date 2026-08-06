@@ -55,7 +55,7 @@
     100% {opacity: 0;}
 }
 
-/* Header Curve Design for other Pages */
+/* Header Design for other Pages */
 
 .headercurve {
     position: relative;
@@ -63,7 +63,7 @@
     left: 0;
     width: 100%;
     height: 7.5rem;
-    background: radial-gradient(ellipse at 50% 50%, #292929 0%, #171717 25%, #000000 100%);
+    background: radial-gradient(ellipse at 50% 50%, rgb(0, 0, 0) 0%, rgb(10, 10, 10) 50%, rgb(25, 25, 25) 100%);
     overflow: hidden;
 }
 
@@ -125,6 +125,76 @@
     height: 32px;
     width: 32px;
     margin-top: 1.75rem;
+}
+
+#edu {
+    padding: 5px;
+    margin: 25px;;
+}
+
+#edumainbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 25px;
+}
+
+.edusubbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 200px;
+    border-radius: 25px;
+    background-color: rgba(104, 104, 104, 0.225);
+
+    transition: transform 0.3s ease;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    width: 90%;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 0.8rem;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.edusubbox:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.edusubbox:hover {
+    transform: scale(1.1);
+}
+
+.institutelogo {
+    height:75px;
+    width: 75px;
+
+    transition: transform 0.3s ease;
+}
+
+.institutelogo:hover {
+    transform: scale(1.2);
 }
 
 /* Text Elements */
