@@ -25,28 +25,42 @@
     </header>
 
     <main>
-        <section class="section" style="height: max-content;">
+        <section class="section" style="background-color: rgb(10, 10, 10);">
             <h1 class="heading1">Welcome to my portfolio website!</h1>
             <p class="para">Here, you can learn more about me, look at my projects, and connect with me on social media. Feel free to explore the different sections of my website to get to know me better.</p>
-            <button class="btnstyl2">Know More About Me</button>
+            <a href="about.html"><button class="btnstyl2">Know More About Me</button></a>
         </section>
 
-        <section>
+        <section class="section" style="background-color: rgb(25, 25, 25);">
+            <h2 class="heading2">My Projects</h2>
+            <p class="para">Source code for my public projects are available on my GitHub profile.</p>
+            <a href="projects.html"><button class="btnstyl2">View My Projects</button></a>
 
+        </section>
+
+        <section class="section" style="background-color: white;">
+            <h2 style="color: black;"class="heading2">Social Connections</h2>
+            <div id="sociallinks">
+                <a href="" target="_blank"><img src="SVGs/logo-github.svg" alt="GitHub"></a>
+                <a href="" target="_blank"><img src="SVGs/logo-linkedin.svg" alt="LinkedIn"></a>
+                <a href="" target="_blank"><img src="SVGs/logo-youtube.svg" alt="YouTube"></a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <ul>
-            <li><a class="link" href="index.html">Home</a></li>
-            <li><a class="link" href="about.html">About Me</a></li>
-            <li><a class="link" href="projects.html">Projects</a></li>
-            <li><a class="link" href="contact.html">Connect with Me</a></li>
+        <ul id="footernav">
+            <li class="footnavlink"><a class="footnavlink" href="index.html">Home</a></li>
+            <li class="footnavlink"><a class="footnavlink" href="about.html">About Me</a></li>
+            <li class="footnavlink"><a class="footnavlink" href="projects.html">Projects</a></li>
+            <li class="footnavlink"><a class="footnavlink" href="contact.html">Connect with Me</a></li>
         </ul>
+        <div>
+            <p>&copy; 2026 Soutrik Banerjee. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="JavaScripts/index.js"></script>
-
 </body>
 
 </html>

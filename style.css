@@ -2,9 +2,10 @@
     font-family: "Sulphur Point", sans-serif;
     font-weight: bold;
     color: white;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: transparent;
     margin: 0;
     padding: 0;
+    /* cursor: url("Cursor/cursor.cur"), auto; */
 }
 
 /* Navigation Bar */
@@ -27,7 +28,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(25px);
     z-index: 1000;
 }
 
@@ -40,7 +41,7 @@
     color: white;
     background-color: rgba(255, 255, 255, 0);
 
-    transition: transform 0.3s ease, font-weight 0.3s ease, text-shadow 0.3s ease;
+    transition: transform 0.2s ease, font-weight 0.2s ease, text-shadow 0.2s ease;
 }
 
 .navlink:hover {
@@ -72,10 +73,19 @@
 .section {
     position: relative;
     padding: 50px;
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#sociallinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
 }
 
 /* Text Elements */
@@ -85,6 +95,15 @@
     padding: 10px;
     width: max-content;
     font-size: 3rem;
+    font-weight: bolder;
+    background-color: transparent;
+}
+
+.heading2 {
+    margin: 25px;
+    padding: 10px;
+    width: max-content;
+    font-size: 2rem;
     font-weight: bolder;
     background-color: transparent;
 }
@@ -113,7 +132,6 @@
     border: none;
     border-radius: 25px;
     box-shadow: none;
-    cursor: pointer;
 
     transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, font-weight 0.3s ease, font-size 0.3s ease;
 }
@@ -124,7 +142,7 @@
     font-weight: bolder;
     color: black;
     background-color: white;
-    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* Style 2 */
@@ -139,9 +157,9 @@
     background-color: white;
     border: none;
     border-radius: 25px;
-    cursor: pointer;
+    box-shadow: none;
 
-    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, font-weight 0.3s ease, font-size 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, font-weight 0.3s ease, font-size 0.3s ease;
 }
 
 .btnstyl2:hover {
@@ -150,4 +168,46 @@
     font-weight: bolder;
     color: white;
     background-color: black;
+    box-shadow: 0 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+
+a, button, input[type="submit"] {
+    /* cursor: url("Cursor/pointer.cur"), auto; */
+}
+
+/* Footer Navigation */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    background-color: rgba(0, 0, 0);
+}
+
+#footernav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    list-style: none;
+}
+
+.footnavlink {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-shadow: none;
+
+    transition: transform 0.2s ease, font-weight 0.2s ease, text-shadow 0.2s ease;
+}
+
+.footnavlink:hover {
+    transform: scale(1.2);
+    font-weight: bolder;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.75), 0 0 2px rgba(255, 255, 255, 0.5), 0 0 3px rgba(255, 255, 255, 0.25);
 }
