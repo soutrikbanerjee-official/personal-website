@@ -55,6 +55,18 @@
     100% {opacity: 0;}
 }
 
+/* Header Curve Design for other Pages */
+
+.headercurve {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7.5rem;
+    background: radial-gradient(ellipse at 50% 50%, #292929 0%, #171717 25%, #000000 100%);
+    overflow: hidden;
+}
+
 /* Semantic Elements */
 
 .section {
@@ -67,6 +79,52 @@
     align-items: center;
     z-index: 10;
     background-color: transparent;
+}
+
+.section2 {
+    position: relative;
+    padding: 50px;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: transparent;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: start;
+}
+
+#profilename {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
+#profilepic {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+
+}
+
+.profilepara {
+    margin-top: 25px;
+    padding: 5px;
+    font-size: 25px;
+    font-style: italic;
+    max-width: 100%;
+}
+
+#linkedinprofile {
+    height: 32px;
+    width: 32px;
+    margin-top: 1.75rem;
 }
 
 /* Text Elements */
