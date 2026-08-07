@@ -16,10 +16,33 @@
     <div class="headercurve"></div>
     
     <header id="header"></header>
+    
+    <main>
+        <div class="section" style="background-color: rgb(10, 10, 10);">
+            <form id="contactform" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="8f65f290-8e27-4ff2-be7b-ef7867ac03eb">
+                <h1 class="heading1">Write me a message</h1>
+                <label for="Name">Name</label>
+                <input id="Name" type="text" name="Name" placeholder="Your name" class="forminput" required>
+
+                <label for="Email">Email</label>
+                <input id="Email" type="email" name="Email" placeholder="Your e-mail ID" class="forminput" required>
+
+                <label for="Message">Message</label>
+                <textarea id="Message" name="Message" placeholder="Your message" class="txtarea" required minlength="50"></textarea>
+
+                <div class="h-captcha" data-captcha="true" data-theme="dark"></div>
+
+                <button id="sendbtn" type="submit" class="btnstyl2">Send <img style="height: 20px; width: 20px;" src="SVGs/send.svg" alt="Send Icon"></button>
+            </form>
+        </div>
+    </main>
 
     <footer id="footer"></footer>
 
     <script src="JavaScript/navbar.js"></script>
     <script src="JavaScript/footer.js"></script>
+    <script src="JavaScript/captcha.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
