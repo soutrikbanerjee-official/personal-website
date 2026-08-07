@@ -93,6 +93,8 @@
     background-color: transparent;
 }
 
+/* About Me Page */
+
 #profile {
     display: flex;
     flex-direction: column;
@@ -237,6 +239,74 @@
     padding: 5px;
     margin:  25px;
     text-align: center;
+}
+
+/* Projects Page */
+
+.projbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 150px;
+    margin: 25px;
+    background-color: rgba(104, 104, 104, 0.225);
+    border-radius: 25px;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.projbox:hover {
+    transform: scale(1.1);
+    background-color: rgba(59, 131, 202, 0.5);
+}
+
+.projtxt {
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.projbox:hover .projtxt {
+    opacity: 1;
+    visibility: visible;
+}
+
+.projdet {
+    height: 30px;
+    width: 30px;
+    filter: invert(100%);
+
+    transition: transform 0.3s ease;
+}
+
+.projdet:hover {
+    transform: scale(1.2);
+}
+
+.projsubbox {
+    width: 80%;
+    padding: 5px;
+    margin: 25px;
+    flex-direction: column;
+    text-align: start;
+}
+
+.projsourcebox {
+    width: 10%;
+    padding: 5px;
+    margin:  15px;
+    justify-content: center;
+}
+
+.projlinkbox {
+    width: 10%;
+    padding: 5px;
+    margin:  15px;
+    justify-content: center;
 }
 
 /* Text Elements */
