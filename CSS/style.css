@@ -5,7 +5,6 @@
     background-color: transparent;
     margin: 0;
     padding: 0;
-    /* cursor: url("Cursor/cursor.cur"), auto; */
 }
 
 /* Cover Canvas */
@@ -392,14 +391,9 @@
     box-shadow: 0 0 1px 3px rgba(255, 255, 255, 0.1);
 }
 
-
-a, button, input[type="submit"] {
-    /* cursor: url("Cursor/pointer.cur"), auto; */
-}
-
 /* Contact Form Style */
 
-form {
+#contactform {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -407,10 +401,11 @@ form {
     background-color: rgba(104, 104, 104, 0.225);
     border-radius: 25px;
 
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-form:hover {
+#contactform:has(#sendbtn:hover) {
+    transform: scale(1.1);
     background-color: rgba(59, 131, 202, 0.5);
 }
 
