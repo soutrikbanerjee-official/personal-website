@@ -1,12 +1,12 @@
-# My Personal Website
+# My Portfolio Website
 
-> I am developing my personal website, feel free to send me suggesstions on LinkedIn.
+> I developed this website using HTML, CSS & JavaScript, and I'm refining it till date. Feel free to send any suggestions on LinkedIn.
 
 ---
 
 ## Project Structure & Summary
 
-This project contains a static portfolio website developed using HTML, CSS & JS. Currently it is still under development.
+This project contains a static portfolio website developed using HTML, CSS & JS. Currently it is under UX optimization.
 
 ---
 
