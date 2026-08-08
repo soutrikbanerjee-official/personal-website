@@ -346,8 +346,8 @@
 }
 
 .institutelogo {
-    height: 65px;
-    width: 65px;
+    height: 62.5px;
+    width: 62.5px;
 
     transition: transform 0.3s ease;
 }
@@ -368,20 +368,26 @@
         align-items: center;
         gap: 30px;
     }
-    .institutelogo {
-        height: 60px;
-        width: 60px;
+    .institutedetails {
+        text-align: center;
     }
 }
 
+#awardcontainer {
+    justify-content: center;
+    gap: 25px;
+}
+
 .awardbox {
+    position: relative;
+    padding: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 80%;
-    height: 150px;
-    margin: 25px;
+    height: 75px;
+    z-index: 100;
     background-color: rgba(104, 104, 104, 0.225);
     border-radius: 25px;
 
@@ -389,11 +395,34 @@
 }
 
 .awardbox:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: rgba(59, 131, 202, 0.5);
 }
 
+.awardsubbox {
+    width: 80%;
+    padding: 5px;
+    margin: 25px;
+    flex-direction: column;
+    text-align: start;
+}
+
+.awardname {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.awarddatebox {
+    width: 20%;
+    padding: 5px;
+    margin:  25px;
+    text-align: center;
+}
+
 .hiddentext {
+    width: 100%;
+    font-style: italic;
+    font-weight: normal;
     opacity: 0;
     visibility: invisible;
 
@@ -405,19 +434,72 @@
     visibility: visible;
 }
 
-.awardsubbox {
-    width: 80%;
-    padding: 5px;
-    margin: 25px;
-    flex-direction: column;
+@media (max-width: 768px) {
+    #awardcontainer {
+        padding: 50px 25px;
+        gap: 30px;
+    }
+    .awardbox {
+        flex-direction: column;
+        padding: 10px;
+        width: 90%;
+        height: auto;
+    }
+    .awardsubbox {
+        width: 100%;
+        text-align: center;
+    }
+    .awardname {
+        font-size: 1.5rem;
+    }
+    .awarddatebox {
+        width: 100%;
+    }
+}
+
+#experiencecontainer {
+    justify-content: center;
+    gap: 25px;
+}
+
+@media (max-width: 768px) {
+    #experiencecontainer {
+        padding: 50px 25px;
+        gap: 30px;
+    }
+}
+
+#certifications {
+    width: 60%;
+    text-align: end;
+}
+
+#certificationsbtn {
+    width: 40%;
     text-align: start;
 }
 
-.awarddatebox {
-    width: 20%;
-    padding: 5px;
-    margin:  25px;
-    text-align: center;
+@media (max-width: 768px) {
+    #certifications {
+        width: 100%;
+        text-align: center;
+    }
+    #certificationsbtn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#cocurricularcontainer {
+    justify-content: center;
+    gap: 25px;
+}
+
+@media (max-width: 768px) {
+    #cocurricularcontainer {
+        padding: 50px 25px;
+        gap: 30px;
+    }
 }
 
 /* Projects Page */
@@ -436,10 +518,14 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-
 .projbox:hover {
     transform: scale(1.1);
     background-color: rgba(59, 131, 202, 0.5);
+}
+
+.projname {
+    font-size: 1.75rem;
+    font-weight: bold;
 }
 
 .projtxt {
@@ -478,6 +564,8 @@
     width: 10%;
     padding: 5px;
     margin:  15px;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -485,7 +573,28 @@
     width: 10%;
     padding: 5px;
     margin:  15px;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .projbox {
+        flex-direction: column;
+        height: max-content;
+    }
+    .projsubbox {
+        text-align: center;
+    }
+    .projname {
+        font-size: 1.5rem;
+    }
+    .projsourcebox {
+        width: 100%;
+    }
+    .projlinkbox {
+        width: 100%;
+    }
 }
 
 /* Contact Form Style */
@@ -504,6 +613,15 @@
 #contactform:has(#sendbtn:hover) {
     transform: scale(1.1);
     background-color: rgba(59, 131, 202, 0.5);
+}
+
+@media (max-width: 768px) {
+    #contactform {
+        margin: 25px;
+    }
+    #contactform:has(#sendbtn:hover) {
+        transform: none;
+    }
 }
 
 .forminput {
