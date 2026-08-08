@@ -1,3 +1,5 @@
+/* Desktop Style */
+
 #navbar {
     display: flex;
     flex-direction: row;
@@ -10,13 +12,22 @@
     transform: translateX(-50%);
     width: 75%;
     border-radius: 25px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(30px);
     z-index: 1000;
+}
+
+#nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbrandmobile, #menutoggle {
+    display: none;
 }
 
 .navlink {
@@ -30,7 +41,6 @@
     background-color: transparent;
     border: none;
     border-radius: 10px;
-
     transition: transform 0.2s ease, font-weight 0.2s ease, text-shadow 0.2s ease, background-color 0.3s ease;
 }
 
@@ -40,8 +50,77 @@
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.75), 0 0 2px rgba(255, 255, 255, 0.5), 0 0 3px rgba(255, 255, 255, 0.25);
 }
 
+/* Mobile/Tablet Style */
+
 @media (orientation: portrait) {
     #navbar {
-        display: none;
+        flex-direction: column;
+        top: 15px;
+        padding: 3.5px 20px;
+        margin-top: 22px;
+        border-radius: 20px;
+    }
+    .navbrandmobile {
+        display: block;
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    #menutoggle {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 12px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+    }
+    .hamburger, .hamburger::before, .hamburger::after {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: white;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        position: relative;
+    }
+    .hamburger::before, .hamburger::after {
+        content: '';
+        position: absolute;
+        left: 0;
+    }
+    .hamburger::before {
+        top: -6px;
+    }
+    .hamburger::after {
+        top: 6px;
+    }
+    #menutoggle.open .hamburger {
+        background-color: transparent;
+    }
+    #menutoggle.open .hamburger::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    #menutoggle.open .hamburger::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    #nav-menu {
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease, margin-top 0.35s ease;
+        width: 100%;
+    }
+    #nav-menu.open {
+        max-height: 250px;
+        margin-top: 10px;
+    }
+    .navlink {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
     }
 }
