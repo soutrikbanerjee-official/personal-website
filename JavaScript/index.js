@@ -127,7 +127,9 @@ function init() {
     }
 }
 
-init();
+if (!window.matchMedia('(orientation: portrait)').matches) {
+    init();
+}
 
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -164,4 +166,6 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-animate();
+if (!window.matchMedia('(orientation: portrait)').matches) {
+    animate();
+}
