@@ -52,7 +52,7 @@
 
 /* Mobile/Tablet Style */
 
-@media (orientation: portrait) {
+@media (orientation: portrait), (max-width: 768px) {
     #navbar {
         flex-direction: column;
         top: 15px;
