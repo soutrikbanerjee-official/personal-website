@@ -63,6 +63,20 @@
     100% {opacity: 0;}
 }
 
+@media (orientation: portrait), (max-width: 768px) {
+    #typingbox {
+        inset: 0 0 30% 0;
+    }
+    #covertext {
+        font-size: 3rem;
+        color: rgb(255, 255, 255)
+    }
+    .cursor {
+        font-size: 4rem;
+        color: rgb(255, 255, 255);
+    }
+}
+
 /* Cover Image (For Mobile/Tablet) */
 
 #coverimagecontainer {
@@ -331,7 +345,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 31%;
+    width: 30%;
+    padding: 10px;
     height: 200px;
     border-radius: 25px;
     background-color: rgba(104, 104, 104, 0.225);
