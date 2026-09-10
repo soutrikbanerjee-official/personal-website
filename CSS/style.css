@@ -586,7 +586,6 @@
 .projdet {
     height: 30px;
     width: 30px;
-    filter: invert(100%);
 
     transition: transform 0.3s ease;
 }
