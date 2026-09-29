@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-> I developed this website using HTML, CSS & JavaScript, and I'm refining it till date. Feel free to send any suggestions on LinkedIn.
+> I developed this website using HTML, CSS & JavaScript, and I'm refining it till date. Feel free to send any suggestions on my social platforms.
 
 ---
 
@@ -19,9 +19,10 @@ This project contains a static portfolio website developed using HTML, CSS & JS.
 ## About Me
 
 I'm a student and tech enthusiast.
-This project is one of my steps toward building practical tools using Python.
+This project is one of my steps toward innovating and contributing to the tech community.
 Drop a follow to keep me motivated! :)
 
 * LinkedIn: www.linkedin.com/in/soutrikbanerjee
 * GitHub: www.github.com/soutrikbanerjee-official
 * YouTube: www.youtube.com/@soutrikbanerjee-official
+* Instagram: www.instagram.com/soutrikbanerjee
